@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test HTML</title>
+</head>
+<body>
+<button id="counter">0</button>
+
+<script>
+    const btn = document.getElementById('counter');
+    btn.addEventListener("click", increment);
+
+    function increment(event) {
+        let value = Number(event.target.textContent);
+        value += 1;
+        event.target.textContent = value.toString();
+    }
+</script>
+</body>
+</html>
